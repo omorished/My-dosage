@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C3F87E6235E0D140012EBF4 /* CategoriesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3F87E5235E0D140012EBF4 /* CategoriesVC.swift */; };
+		4C6B6991235E2A35006586D3 /* CategoryUIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6B6990235E2A35006586D3 /* CategoryUIButton.swift */; };
 		855555A52333A27D0097B6C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855555A42333A27D0097B6C5 /* AppDelegate.swift */; };
 		855555A72333A27D0097B6C5 /* MainPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855555A62333A27D0097B6C5 /* MainPageVC.swift */; };
 		855555AA2333A27D0097B6C5 /* MainPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 855555A82333A27D0097B6C5 /* MainPage.storyboard */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4C3F87E5235E0D140012EBF4 /* CategoriesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesVC.swift; sourceTree = "<group>"; };
+		4C6B6990235E2A35006586D3 /* CategoryUIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryUIButton.swift; sourceTree = "<group>"; };
 		855555A12333A27D0097B6C5 /* MyDosage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyDosage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		855555A42333A27D0097B6C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		855555A62333A27D0097B6C5 /* MainPageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageVC.swift; sourceTree = "<group>"; };
@@ -71,6 +75,7 @@
 			isa = PBXGroup;
 			children = (
 				856506892335979E004B15EC /* InsulinCalculationVC.swift */,
+				4C3F87E5235E0D140012EBF4 /* CategoriesVC.swift */,
 				855555A62333A27D0097B6C5 /* MainPageVC.swift */,
 			);
 			path = Controller;
@@ -98,6 +103,7 @@
 			children = (
 				855555A82333A27D0097B6C5 /* MainPage.storyboard */,
 				8565068723358196004B15EC /* MainPageUIButton.swift */,
+				4C6B6990235E2A35006586D3 /* CategoryUIButton.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -176,7 +182,9 @@
 				855555A72333A27D0097B6C5 /* MainPageVC.swift in Sources */,
 				8565068823358197004B15EC /* MainPageUIButton.swift in Sources */,
 				855555A52333A27D0097B6C5 /* AppDelegate.swift in Sources */,
+				4C6B6991235E2A35006586D3 /* CategoryUIButton.swift in Sources */,
 				8565068A2335979E004B15EC /* InsulinCalculationVC.swift in Sources */,
+				4C3F87E6235E0D140012EBF4 /* CategoriesVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

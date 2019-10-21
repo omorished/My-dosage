@@ -1,59 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6ab-Ub-S4N">
-    <device id="retina6_5" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6ab-Ub-S4N">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="n3t-E4-pDx">
-            <objects>
-                <viewController id="ZjF-TX-HZm" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="DDo-jl-Kdy">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="من نحن؟" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wMI-Xd-btM">
-                                <rect key="frame" x="134.66666666666666" y="148" width="144.99999999999997" height="48"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="145" id="Jjh-Dm-TzF"/>
-                                    <constraint firstAttribute="height" constant="48" id="gLf-fb-nS9"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
-                                <color key="textColor" red="0.284992235683102" green="0.51847554380234873" blue="0.6854426210250939" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="35" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3ot-PI-yMw">
-                                <rect key="frame" x="20" y="234" width="374" height="522"/>
-                                <mutableString key="text">موقع دوت كوم هي شركة تقدم خدمات حلول الويب ومتواجدة وبقوة في السوق منذ عام 2005, لنا قاعدة كبيرة من العملاء من مختلف دول العالم الذين استطاعنا ان ننال على ثقتهم من خلال تعاملنا معهم في هذه السنوات, نوفر خدمات استضافة المواقع, حجز الدومين, استضافة الدردشة, تصميم المواقع, برمجة المواقع, اشهار و نشر المواقع و التسويق الالكتروني, ادارة المواقع و ادارة صفحات التواصل الاجتماعي, الدعم الفني للمنتديات, الدعم الفني للمواقع, تصميم المطبوعات, واكتسبنا في موقع دوت كوم خبرة كبيرة جدا في تقديم هذه الخدمات من خلال عملنا في السنوات الماضية والتي اتاحت لنا ان نوفر حاليا هذه الخدمات لعملائنا باحترافية شديدة مع ضمان جودة الخدمة, وكان هذا بسبب اصرارنا دائما على ملاحقة التطور المستمر في تكنولوجيا المعلومات لتقديم خدماتنا بأحدث التقنيات المتوفرة دائما.</mutableString>
-                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="HC1-vA-kPX" firstAttribute="trailing" secondItem="3ot-PI-yMw" secondAttribute="trailing" constant="20" id="7X9-NZ-KCi"/>
-                            <constraint firstItem="3ot-PI-yMw" firstAttribute="leading" secondItem="HC1-vA-kPX" secondAttribute="leading" constant="20" id="8aN-h2-Czz"/>
-                            <constraint firstItem="HC1-vA-kPX" firstAttribute="bottom" secondItem="3ot-PI-yMw" secondAttribute="bottom" constant="106" id="8xw-4Q-h9I"/>
-                            <constraint firstItem="wMI-Xd-btM" firstAttribute="centerX" secondItem="DDo-jl-Kdy" secondAttribute="centerX" id="UoZ-Co-X0b"/>
-                            <constraint firstItem="3ot-PI-yMw" firstAttribute="top" secondItem="wMI-Xd-btM" secondAttribute="bottom" constant="38" id="fOP-Vu-T9G"/>
-                            <constraint firstItem="wMI-Xd-btM" firstAttribute="top" secondItem="HC1-vA-kPX" secondAttribute="top" constant="60" id="fia-I5-ZtY"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="HC1-vA-kPX"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="e2f-2p-FgH"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="6vt-p2-nTV" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="889.85507246376824" y="-1299.1071428571429"/>
-        </scene>
-        <!--الصفحة الرئيسية-->
+        <!--الرئيسية-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="MainPageVC" customModule="MyDosage" customModuleProvider="target" sceneMemberID="viewController">
@@ -72,7 +27,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="bpF-ls-Tvk" kind="show" id="dUR-9k-Qbb"/>
+                                    <segue destination="bpF-ls-Tvk" kind="show" id="pK3-lZ-TAt"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wfm-0P-8Pr" customClass="MainPageUIButton" customModule="MyDosage" customModuleProvider="target">
@@ -82,9 +37,12 @@
                                 <state key="normal" title="حساب القيمة الغذائية للوجبة">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="Ex6-ma-2cM" kind="show" id="vff-jK-Gml"/>
+                                </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="ose-8P-Jym">
-                                <rect key="frame" x="44" y="150" width="326" height="275"/>
+                                <rect key="frame" x="44" y="150" width="326.00000000000023" height="275"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="326" id="Ad8-mm-sSw"/>
                                     <constraint firstAttribute="height" constant="275" id="d8c-tG-74v"/>
@@ -105,19 +63,140 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" title="الصفحة الرئيسية" largeTitleDisplayMode="always" id="XT6-gd-ckY">
-                        <barButtonItem key="leftBarButtonItem" title="من نحن؟" id="mjx-RR-S4f">
-                            <connections>
-                                <segue destination="ZjF-TX-HZm" kind="push" id="TLH-kt-rLh"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="الرئيسية" largeTitleDisplayMode="always" id="XT6-gd-ckY"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="855.07246376811599" y="-623.4375"/>
         </scene>
-        <!--Insulin CalculationVC-->
+        <!--أنواع الاغذية-->
+        <scene sceneID="pyl-b1-Tf6">
+            <objects>
+                <viewController id="Ex6-ma-2cM" customClass="CategoriesVC" customModule="MyDosage" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="h1P-xN-ljr">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="je3-lT-fUd" customClass="CategoryUIButton" customModule="MyDosage" customModuleProvider="target">
+                                <rect key="frame" x="16" y="398" width="140" height="140"/>
+                                <color key="backgroundColor" red="0.93669041450777202" green="0.7565878886461479" blue="0.0078113142559547693" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="140" id="CTv-AB-Tae"/>
+                                    <constraint firstAttribute="width" constant="140" id="xsh-Sw-iOP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="فواكه">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xJf-Uh-Mhx" customClass="CategoryUIButton" customModule="MyDosage" customModuleProvider="target">
+                                <rect key="frame" x="258" y="398" width="140" height="140"/>
+                                <color key="backgroundColor" red="0.054901960784313725" green="0.27843137254901962" blue="0.28627450980392155" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="140" id="by7-Mg-O8u"/>
+                                    <constraint firstAttribute="height" constant="140" id="d5y-vd-ZdB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="خضار">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="18l-ZV-s5l" customClass="CategoryUIButton" customModule="MyDosage" customModuleProvider="target">
+                                <rect key="frame" x="258" y="208" width="140" height="140"/>
+                                <color key="backgroundColor" red="1" green="0.37647058823529411" blue="0.37647058823529411" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="140" id="RgQ-GN-Hp3"/>
+                                    <constraint firstAttribute="width" constant="140" id="pqh-tS-rou"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="بروتين">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Omt-EQ-RPC" customClass="CategoryUIButton" customModule="MyDosage" customModuleProvider="target">
+                                <rect key="frame" x="16" y="208" width="140" height="140"/>
+                                <color key="backgroundColor" red="0.0" green="0.49803921568627452" blue="0.67843137254901964" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="140" id="cDL-ZF-aPa"/>
+                                    <constraint firstAttribute="width" constant="140" id="kZW-Ry-znL"/>
+                                </constraints>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="الحليب و">
+                                            <attributes>
+                                                <color key="NSColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                <font key="NSFont" size="25" name=".ArabicUIDisplay-Regular"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment content=" ">
+                                            <attributes>
+                                                <color key="NSColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                <font key="NSFont" metaFont="system" size="25"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment content="مشتقاته">
+                                            <attributes>
+                                                <color key="NSColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                <font key="NSFont" size="25" name=".ArabicUIDisplay-Regular"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ry2-py-6hO" customClass="CategoryUIButton" customModule="MyDosage" customModuleProvider="target">
+                                <rect key="frame" x="137" y="593" width="140" height="140"/>
+                                <color key="backgroundColor" red="0.1803921568627451" green="0.32156862745098036" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="140" id="GBC-UZ-pfP"/>
+                                    <constraint firstAttribute="height" constant="140" id="SpY-Ys-Uot"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="كربوهيدرات">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <searchBar contentMode="redraw" fixedFrame="YES" placeholder="ابحث عن اسم الطعام" translatesAutoresizingMaskIntoConstraints="NO" id="Z3f-VR-Zgq">
+                                <rect key="frame" x="0.0" y="88" width="414" height="56"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <scopeButtonTitles>
+                                    <string>Title</string>
+                                    <string>Title</string>
+                                </scopeButtonTitles>
+                            </searchBar>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="ry2-py-6hO" firstAttribute="top" secondItem="je3-lT-fUd" secondAttribute="bottom" constant="55" id="05d-1R-6Ey"/>
+                            <constraint firstItem="zGS-CP-KvN" firstAttribute="trailing" secondItem="xJf-Uh-Mhx" secondAttribute="trailing" constant="16" id="8RQ-KC-oFt"/>
+                            <constraint firstItem="je3-lT-fUd" firstAttribute="leading" secondItem="zGS-CP-KvN" secondAttribute="leading" constant="16" id="9bu-em-0oU"/>
+                            <constraint firstItem="xJf-Uh-Mhx" firstAttribute="top" secondItem="18l-ZV-s5l" secondAttribute="bottom" constant="50" id="A4Y-Hy-Pwq"/>
+                            <constraint firstItem="Omt-EQ-RPC" firstAttribute="leading" secondItem="zGS-CP-KvN" secondAttribute="leading" constant="16" id="CMn-JE-39Y"/>
+                            <constraint firstItem="zGS-CP-KvN" firstAttribute="trailing" secondItem="18l-ZV-s5l" secondAttribute="trailing" constant="16" id="hsI-qP-1MT"/>
+                            <constraint firstItem="ry2-py-6hO" firstAttribute="centerX" secondItem="h1P-xN-ljr" secondAttribute="centerX" id="jRs-x1-oSU"/>
+                            <constraint firstItem="Omt-EQ-RPC" firstAttribute="top" secondItem="zGS-CP-KvN" secondAttribute="top" constant="120" id="sW6-fX-g79"/>
+                            <constraint firstItem="18l-ZV-s5l" firstAttribute="top" secondItem="zGS-CP-KvN" secondAttribute="top" constant="120" id="vt9-yz-LuO"/>
+                            <constraint firstItem="je3-lT-fUd" firstAttribute="top" secondItem="Omt-EQ-RPC" secondAttribute="bottom" constant="50" id="ySj-r4-85Q"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="zGS-CP-KvN"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="أنواع الاغذية" id="S1i-85-ncV"/>
+                    <connections>
+                        <outlet property="carboBtn" destination="ry2-py-6hO" id="sN3-hR-viL"/>
+                        <outlet property="fruitBtn" destination="je3-lT-fUd" id="126-fm-yJ7"/>
+                        <outlet property="milkAndDairy" destination="Omt-EQ-RPC" id="IcD-wh-fnJ"/>
+                        <outlet property="proteinBtn" destination="18l-ZV-s5l" id="sKi-7i-p5M"/>
+                        <outlet property="vegBtn" destination="xJf-Uh-Mhx" id="Vp3-bZ-AuY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UZq-JL-DEa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1944.9275362318842" y="-22.098214285714285"/>
+        </scene>
+        <!--حساب معامل الانسولين-->
         <scene sceneID="HxR-gu-RQJ">
             <objects>
                 <viewController id="bpF-ls-Tvk" customClass="InsulinCalculationVC" customModule="MyDosage" customModuleProvider="target" sceneMemberID="viewController">
@@ -175,7 +254,7 @@
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="إحسب"/>
                                 <connections>
-                                    <action selector="calculateInsulin:" destination="bpF-ls-Tvk" eventType="touchUpInside" id="WZq-Pe-9D6"/>
+                                    <action selector="calculateInsulin:" destination="bpF-ls-Tvk" eventType="touchUpInside" id="a6t-EI-KrD"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="line" translatesAutoresizingMaskIntoConstraints="NO" id="zRI-il-mCR">
@@ -207,15 +286,16 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="gzh-Q8-Cf6"/>
                     </view>
+                    <navigationItem key="navigationItem" title="حساب معامل الانسولين" id="IuF-yv-F73"/>
                     <connections>
-                        <outlet property="calculateBtn" destination="mmf-pi-PCl" id="QE0-2E-2Hf"/>
-                        <outlet property="insulinTxtFiled" destination="Sqr-vj-ohp" id="ETD-kD-4Gu"/>
-                        <outlet property="result" destination="Aqt-HN-wv7" id="aIM-Fr-P1m"/>
+                        <outlet property="calculationBtn" destination="mmf-pi-PCl" id="9Hk-R1-5HQ"/>
+                        <outlet property="insulinTxtField" destination="Sqr-vj-ohp" id="AeN-LJ-bzv"/>
+                        <outlet property="resultLbl" destination="Aqt-HN-wv7" id="WVS-FM-EBJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zbx-Lr-llw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1905.7971014492755" y="-623.4375"/>
+            <point key="canvasLocation" x="1945" y="-848"/>
         </scene>
         <!--Item-->
         <scene sceneID="d1X-f7-w5W">
