@@ -7,7 +7,7 @@ class CategoriesVC: UIViewController {
     
     //UI Connection
     @IBOutlet weak var proteinBtn: CategoryUIButton!
-    @IBOutlet weak var milkAndDairy: CategoryUIButton!
+    @IBOutlet weak var milkAndDairyBtn: CategoryUIButton!
     @IBOutlet weak var vegBtn: CategoryUIButton!
     @IBOutlet weak var fruitBtn: CategoryUIButton!
     @IBOutlet weak var carboBtn: CategoryUIButton!
@@ -20,11 +20,11 @@ class CategoriesVC: UIViewController {
     //to make button circle
     proteinBtn.layer.cornerRadius = proteinBtn.frame.size.width / 2
 
-    milkAndDairy.layer.cornerRadius = milkAndDairy.frame.size.width / 2
+    milkAndDairyBtn.layer.cornerRadius = milkAndDairyBtn.frame.size.width / 2
 
     vegBtn.layer.cornerRadius = vegBtn.frame.size.width / 2
         
-    milkAndDairy.layer.cornerRadius = milkAndDairy.frame.size.width / 2
+    milkAndDairyBtn.layer.cornerRadius = milkAndDairyBtn.frame.size.width / 2
         
     fruitBtn.layer.cornerRadius = fruitBtn.frame.size.width / 2
         
