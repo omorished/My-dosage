@@ -56,6 +56,9 @@ class InsulinCalculationVC: UIViewController {
         } else {
             //do nothing
         }
+        
+        
+       
     }
     
     

@@ -6,10 +6,10 @@ import Foundation
 
 class FoodDB{
     
-    var chart: [Food] = []
+    static var foodBasket: [Food] = []
     
     //(1) PROTEIN LIST
-    var proteinList: [Food] =
+    static var proteinList: [Food] =
     [
 Food(foodType: .protein, foodName: "لحم", amountUnit: "جرام", numberInArray: 0),
 Food(foodType: .protein, foodName: "دجاج", amountUnit: "جرام", numberInArray: 1),
@@ -33,7 +33,7 @@ Food(foodType: .protein, foodName: "بازيلا", amountUnit: "كوب", numberI
         ]
 
     //(2) MILK AND DIARY
-    var milkAndDiaryList: [Food] = [
+    static var milkAndDairyList: [Food] = [
 Food(foodType: .milkAndDairy, foodName: "زبادي كامل الدسم", amountUnit: "مل", numberInArray: 0),
 Food(foodType: .milkAndDairy, foodName: "زبادي قليل الدسم", amountUnit: "مل", numberInArray: 1),
 Food(foodType: .milkAndDairy, foodName: "زبادي خالي الدسم", amountUnit: "مل", numberInArray: 2),
@@ -49,7 +49,7 @@ Food(foodType: .milkAndDairy, foodName: "لبن خالي الدسم", amountUnit
 ]
     
     //(3) Veg
-    var vegList: [Food] = [
+    static var vegList: [Food] = [
 Food(foodType: .veg, foodName: "جزر", amountUnit: "كوب", numberInArray: 0),
 Food(foodType: .veg, foodName: "جزر", amountUnit: "كوب مطبوخ", numberInArray: 1),
 Food(foodType: .veg, foodName: "بروكلي", amountUnit: "كوب", numberInArray: 2),
@@ -81,7 +81,7 @@ Food(foodType: .veg, foodName: "جرجير", amountUnit: "كوب", numberInArray
     ]
 
     //(4) Fruit
-    var fruitList: [Food] = [
+    static var fruitList: [Food] = [
 Food(foodType: .fruit, foodName: "تفاحة", amountUnit: "حبة", numberInArray: 0),
 Food(foodType: .fruit, foodName: "مشمش", amountUnit: "حبة", numberInArray: 1),
 Food(foodType: .fruit, foodName: "توت اسود", amountUnit: "كوب", numberInArray: 2),
@@ -101,7 +101,7 @@ Food(foodType: .fruit, foodName: "فراولة", amountUnit: "كوب", numberInA
     
     
     //(5) Carbo
-    var carboList: [Food] = [
+    static var carboList: [Food] = [
     
 Food(foodType: .carbo, foodName: "ارز ابيض", amountUnit: "ملاعق", numberInArray: 0),
 Food(foodType: .carbo, foodName: "ارز بني", amountUnit: "كوب", numberInArray: 1),
@@ -128,8 +128,71 @@ Food(foodType: .carbo, foodName: "حمص", amountUnit: "كوب", numberInArray: 
     ]
     
     
-    func getProteinList() -> [Food]{
+     static func getProteinList() -> [Food]{
         return proteinList
     }
     
-}
+    static func getMilkAndDairyList() -> [Food] {
+        return milkAndDairyList
+    }
+    
+    static func getVegList() -> [Food] {
+        return vegList
+    }
+    
+    static func getFruitList() -> [Food] {
+        return fruitList
+    }
+    
+    static func getCarboList() -> [Food] {
+        return carboList
+    }
+    
+    static func checkOrUncheckOnOriginalList(food: Food, isChecked: Bool){
+        
+        switch("\(food.foodType)"){
+        case "protein":
+        proteinList[food.numberInArray].checked = isChecked
+        case "milkAndDairy":
+        milkAndDairyList[food.numberInArray].checked = isChecked
+        case "veg":
+        vegList[food.numberInArray].checked = isChecked
+        case "fruit":
+        fruitList[food.numberInArray].checked = isChecked
+        default :
+        carboList[food.numberInArray].checked = isChecked
+
+        }
+    }
+    
+     static func getProperList(passTagNum: Int) -> [Food] {
+        
+        switch(passTagNum) {
+               case 1: return proteinList
+               case 2: return milkAndDairyList
+               case 3: return vegList
+               case 4: return fruitList
+               default : return carboList
+               }
+        
+    }
+        
+        static func addToBasket(food: Food) {
+            foodBasket.append(food)
+        }
+        
+        static func removeFromBasket(food: Food) {
+            
+            for num in 0...foodBasket.count-1 {
+                if foodBasket[num].foodName == food.foodName {
+                    foodBasket.remove(at: num)
+                }
+            
+        }
+    }
+    
+    
+    
+    }
+
+

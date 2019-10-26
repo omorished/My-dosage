@@ -40,11 +40,28 @@ class CategoriesVC: UIViewController {
 
         }
     
+    //
+    @IBAction func btnClicked(_ sender: CategoryUIButton) {
+        
+        performSegue(withIdentifier: "goToFoodList", sender: sender)
+    }
+    
+
+    
     //to dismiss the keyboard whenever click everywhere in the blank view
     @objc func dismissKeyboard() {
     
             view.endEditing(true)
         }
 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if segue.identifier == "goToFoodList" {
+            if let VC = segue.destination as? FoodListVC {
+                let btnPressed = sender as! CategoryUIButton
+                VC.tagNumber = btnPressed.tag
+            }
+        }
+    }
 
 }
