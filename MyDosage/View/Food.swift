@@ -19,12 +19,13 @@ class Food{
     var checked: Bool = false
     var numberInArray: Int = 0
     
-    init(foodType: FoodType, foodName: String, amountUnit: String, numberInArray: Int) {
+    init(foodType: FoodType, foodName: String, amountUnit: String, numberInArray: Int, carb: String) {
         
         self.foodType = foodType
         self.foodName = foodName
         self.amountUnit = amountUnit
         self.numberInArray = numberInArray
+        self.carb = carb
     }
     
 }

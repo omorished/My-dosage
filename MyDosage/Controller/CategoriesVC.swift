@@ -11,7 +11,14 @@ class CategoriesVC: UIViewController {
     @IBOutlet weak var vegBtn: CategoryUIButton!
     @IBOutlet weak var fruitBtn: CategoryUIButton!
     @IBOutlet weak var carboBtn: CategoryUIButton!
+    //
+    @IBOutlet weak var basketBtn: UIBarButtonItem!
     
+    override func viewWillAppear(_ animated: Bool) {
+        
+        checkIfBasketIsEmptyOfFill()
+        
+    }
     
 
     override func viewDidLoad() {
@@ -63,5 +70,17 @@ class CategoriesVC: UIViewController {
             }
         }
     }
+    
+    
+     func checkIfBasketIsEmptyOfFill() {
+        
+        if FoodDB.foodBasket.count == 0 {
+            basketBtn.image = UIImage(named: "shopping-basket-empty")
+        }
+        else {
+             basketBtn.image = UIImage(named: "shopping-basket-fill")
+        }
+    }
+    
 
 }

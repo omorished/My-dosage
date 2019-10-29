@@ -11,117 +11,117 @@ class FoodDB{
     //(1) PROTEIN LIST
     static var proteinList: [Food] =
     [
-Food(foodType: .protein, foodName: "لحم", amountUnit: "جرام", numberInArray: 0),
-Food(foodType: .protein, foodName: "دجاج", amountUnit: "جرام", numberInArray: 1),
-Food(foodType: .protein, foodName: "السمك", amountUnit: "جرام", numberInArray: 2),
-Food(foodType: .protein, foodName: "بيض", amountUnit: "حبة", numberInArray: 3),
-Food(foodType: .protein, foodName: "الجوز", amountUnit: "كوب", numberInArray: 4),
-Food(foodType: .protein, foodName: "اللوز", amountUnit: "كوب", numberInArray: 5),
-Food(foodType: .protein, foodName: "فستق", amountUnit: "كوب", numberInArray: 6),
-Food(foodType: .protein, foodName: "الفول السوداني", amountUnit: "كوب", numberInArray: 7),
-Food(foodType: .protein, foodName: "البندق", amountUnit: "كوب", numberInArray: 8),
-Food(foodType: .protein, foodName: "بذور الكتان", amountUnit: "كوب", numberInArray: 9),
-Food(foodType: .protein, foodName: "بذور اليقطين", amountUnit: "كوب", numberInArray: 10),
-Food(foodType: .protein, foodName: "كاجو", amountUnit: "كوب", numberInArray: 11),
-Food(foodType: .protein, foodName: "كستناء", amountUnit: "كوب", numberInArray: 12),
-Food(foodType: .protein, foodName: "العدس", amountUnit: "كوب", numberInArray: 13),
-Food(foodType: .protein, foodName: "الفول", amountUnit: "كوب", numberInArray: 14),
-Food(foodType: .protein, foodName: "لوبيا", amountUnit: "كوب", numberInArray: 15),
-Food(foodType: .protein, foodName: "فاصوليا", amountUnit: "كوب", numberInArray: 16),
-Food(foodType: .protein, foodName: "حمص", amountUnit: "كوب", numberInArray: 17),
-Food(foodType: .protein, foodName: "بازيلا", amountUnit: "كوب", numberInArray: 18)
+Food(foodType: .protein, foodName: "لحم", amountUnit: "٥٠ جم", numberInArray: 0, carb: "٢.٥"),
+Food(foodType: .protein, foodName: "دجاج", amountUnit: "١٠٠ جم", numberInArray: 1, carb: "٠"),
+Food(foodType: .protein, foodName: "السمك", amountUnit: "١٧٥ جم", numberInArray: 2, carb: "٣.٢"),
+Food(foodType: .protein, foodName: "بيض", amountUnit: "حبة متوسطة", numberInArray: 3, carb: "٠.٥"),
+Food(foodType: .protein, foodName: "الجوز", amountUnit: "كوب واحد", numberInArray: 4, carb: "٨"),
+Food(foodType: .protein, foodName: "اللوز", amountUnit: "كوب واحد", numberInArray: 5, carb: "٨.٣"),
+Food(foodType: .protein, foodName: "فستق", amountUnit: "كوب واحد", numberInArray: 6, carb: "١٥"),
+Food(foodType: .protein, foodName: "الفول السوداني", amountUnit: "كوب واحد", numberInArray: 7, carb: "٧"),
+Food(foodType: .protein, foodName: "البندق", amountUnit: "كوب واحد", numberInArray: 8, carb: "٦"),
+Food(foodType: .protein, foodName: "بذور الكتان", amountUnit: "كوب واحد", numberInArray: 9, carb: "١.٨"),
+Food(foodType: .protein, foodName: "بذور اليقطين", amountUnit: "كوب واحد", numberInArray: 10, carb: "٩.٧"),
+Food(foodType: .protein, foodName: "كاجو", amountUnit: "كوب واحد", numberInArray: 11, carb: "٢٦"),
+Food(foodType: .protein, foodName: "كستناء", amountUnit: "كوب واحد", numberInArray: 12, carb: "٦٠"),
+Food(foodType: .protein, foodName: "العدس", amountUnit: "كوب واحد", numberInArray: 13, carb: "١٥"),
+Food(foodType: .protein, foodName: "الفول", amountUnit: "كوب واحد", numberInArray: 14, carb: "١٤"),
+Food(foodType: .protein, foodName: "لوبيا", amountUnit: "كوب واحد", numberInArray: 15, carb: "٢"),
+Food(foodType: .protein, foodName: "فاصوليا", amountUnit: "كوب واحد", numberInArray: 16, carb: "١٣.٩"),
+Food(foodType: .protein, foodName: "حمص", amountUnit: "كوب واحد", numberInArray: 17, carb: "١٢"),
+Food(foodType: .protein, foodName: "بازيلا", amountUnit: "كوب واحد", numberInArray: 18, carb: "٥.١")
         ]
 
     //(2) MILK AND DIARY
     static var milkAndDairyList: [Food] = [
-Food(foodType: .milkAndDairy, foodName: "زبادي كامل الدسم", amountUnit: "مل", numberInArray: 0),
-Food(foodType: .milkAndDairy, foodName: "زبادي قليل الدسم", amountUnit: "مل", numberInArray: 1),
-Food(foodType: .milkAndDairy, foodName: "زبادي خالي الدسم", amountUnit: "مل", numberInArray: 2),
-Food(foodType: .milkAndDairy, foodName: "زبادي يوناني ساده", amountUnit: "جم", numberInArray: 3),
-Food(foodType: .milkAndDairy, foodName: "قشطة طازجة", amountUnit: "جم", numberInArray: 4),
-Food(foodType: .milkAndDairy, foodName: "لبنة كاملة الدسم", amountUnit: "جم", numberInArray: 5),
-Food(foodType: .milkAndDairy, foodName: "لبنة قليلة الدسم", amountUnit: "جم", numberInArray: 6),
-Food(foodType: .milkAndDairy, foodName: "حليب كامل الدسم", amountUnit: "كوب", numberInArray: 7),
-Food(foodType: .milkAndDairy, foodName: "حليب قليل الدسم", amountUnit: "كوب", numberInArray: 8),
-Food(foodType: .milkAndDairy, foodName: "لبن كامل الدسم", amountUnit: "كوب", numberInArray: 9),
-Food(foodType: .milkAndDairy, foodName: "لبن قليل الدسم", amountUnit: "كوب", numberInArray: 10),
-Food(foodType: .milkAndDairy, foodName: "لبن خالي الدسم", amountUnit: "كوب", numberInArray: 11)
+Food(foodType: .milkAndDairy, foodName: "زبادي كامل الدسم", amountUnit: "١٠٠ مل", numberInArray: 0, carb: "٦.٢"),
+Food(foodType: .milkAndDairy, foodName: "زبادي قليل الدسم", amountUnit: "١٠٠ مل", numberInArray: 1, carb: "٧"),
+Food(foodType: .milkAndDairy, foodName: "زبادي خالي الدسم", amountUnit: "١٠٠ مل", numberInArray: 2, carb: "٦.٣"),
+Food(foodType: .milkAndDairy, foodName: "زبادي يوناني ساده", amountUnit: "١٠٠ جم", numberInArray: 3, carb: "٨.٥"),
+Food(foodType: .milkAndDairy, foodName: "قشطة طازجة", amountUnit: "١٠٠ جم", numberInArray: 4, carb: "٣.٤"),
+Food(foodType: .milkAndDairy, foodName: "لبنة كاملة الدسم", amountUnit: "١٠٠ جم", numberInArray: 5, carb: "٨"),
+Food(foodType: .milkAndDairy, foodName: "لبنة قليلة الدسم", amountUnit: "١٠٠ جم", numberInArray: 6, carb: "٨.٥"),
+Food(foodType: .milkAndDairy, foodName: "حليب كامل الدسم", amountUnit: "كوب واحد", numberInArray: 7, carb: "١١.٧٥"),
+Food(foodType: .milkAndDairy, foodName: "حليب قليل الدسم", amountUnit: "كوب واحد", numberInArray: 8, carb: "١١.٧٥"),
+Food(foodType: .milkAndDairy, foodName: "لبن كامل الدسم", amountUnit: "كوب واحد", numberInArray: 9, carb: "١١.٧٥"),
+Food(foodType: .milkAndDairy, foodName: "لبن قليل الدسم", amountUnit: "كوب واحد", numberInArray: 10, carb: "١١.٧٥"),
+Food(foodType: .milkAndDairy, foodName: "لبن خالي الدسم", amountUnit: "كوب واحد", numberInArray: 11, carb: "١٢")
 ]
     
     //(3) Veg
     static var vegList: [Food] = [
-Food(foodType: .veg, foodName: "جزر", amountUnit: "كوب", numberInArray: 0),
-Food(foodType: .veg, foodName: "جزر", amountUnit: "كوب مطبوخ", numberInArray: 1),
-Food(foodType: .veg, foodName: "بروكلي", amountUnit: "كوب", numberInArray: 2),
-Food(foodType: .veg, foodName: "بروكلي", amountUnit: "كوب مطبوخ", numberInArray: 3),
-Food(foodType: .veg, foodName: "شمندر", amountUnit: "كوب", numberInArray: 4),
-Food(foodType: .veg, foodName: "شمندر", amountUnit: "كوب مطبوخ", numberInArray: 5),
-Food(foodType: .veg, foodName: "فلفل رومي", amountUnit: "كوب", numberInArray: 6),
-Food(foodType: .veg, foodName: "فلفل رومي", amountUnit: "كوب مطبوخ", numberInArray: 7),
-Food(foodType: .veg, foodName: "طماطم", amountUnit: "كوب", numberInArray: 8),
-Food(foodType: .veg, foodName: "طماطم", amountUnit: "كوب مطبوخ", numberInArray: 9),
-Food(foodType: .veg, foodName: "بصل", amountUnit: "كوب", numberInArray: 10),
-Food(foodType: .veg, foodName: "بصل", amountUnit: "كوب مطبوخ", numberInArray: 11),
-Food(foodType: .veg, foodName: "فطر", amountUnit: "كوب", numberInArray: 12),
-Food(foodType: .veg, foodName: "فطر", amountUnit: "كوب مطبوخ", numberInArray: 13),
-Food(foodType: .veg, foodName: "سبانخ", amountUnit: "كوب", numberInArray: 14),
-Food(foodType: .veg, foodName: "سبانخ", amountUnit: "كوب مطبوخ", numberInArray: 15),
-Food(foodType: .veg, foodName: "كوسة", amountUnit: "كوب", numberInArray: 16),
-Food(foodType: .veg, foodName: "كوسة", amountUnit: "كوب مطبوخ", numberInArray: 17),
-Food(foodType: .veg, foodName: "ذرة مسلوقة", amountUnit: "كوب", numberInArray: 18),
-Food(foodType: .veg, foodName: "بطاطس", amountUnit: "حبة صغيرة", numberInArray: 19),
-Food(foodType: .veg, foodName: "بطاطا حلوة", amountUnit: "حبة صغيرة", numberInArray: 20),
-Food(foodType: .veg, foodName: "باذنجان", amountUnit: "حبة كبيرة", numberInArray: 21),
-Food(foodType: .veg, foodName: "قرع", amountUnit: "حبة", numberInArray: 22),
-Food(foodType: .veg, foodName: "خس", amountUnit: "كوب", numberInArray: 23),
-Food(foodType: .veg, foodName: "خيار", amountUnit: "حبة كبيرة", numberInArray: 24),
-Food(foodType: .veg, foodName: "ملفوف", amountUnit: "كوب", numberInArray: 25),
-Food(foodType: .veg, foodName: "بقدونس", amountUnit: "كوب", numberInArray: 26),
-Food(foodType: .veg, foodName: "جرجير", amountUnit: "كوب", numberInArray: 27),
+Food(foodType: .veg, foodName: "جزر", amountUnit: "كوب واحد", numberInArray: 0, carb: "٥"),
+Food(foodType: .veg, foodName: "جزر", amountUnit: "نصف كوب مطبوخ", numberInArray: 1, carb: "٥"),
+Food(foodType: .veg, foodName: "بروكلي", amountUnit: "كوب واحد", numberInArray: 2, carb: "٥"),
+Food(foodType: .veg, foodName: "بروكلي", amountUnit: "نصف كوب مطبوخ", numberInArray: 3, carb: "٥"),
+Food(foodType: .veg, foodName: "شمندر", amountUnit: "كوب واحد", numberInArray: 4, carb: "٥"),
+Food(foodType: .veg, foodName: "شمندر", amountUnit: "نصف كوب مطبوخ", numberInArray: 5, carb: "٥"),
+Food(foodType: .veg, foodName: "فلفل رومي", amountUnit: "كوب واحد", numberInArray: 6, carb: "٥"),
+Food(foodType: .veg, foodName: "فلفل رومي", amountUnit: "نصف كوب مطبوخ", numberInArray: 7, carb: "٥"),
+Food(foodType: .veg, foodName: "طماطم", amountUnit: "كوب واحد", numberInArray: 8, carb: "٥"),
+Food(foodType: .veg, foodName: "طماطم", amountUnit: "نصف كوب مطبوخ", numberInArray: 9, carb: "٥"),
+Food(foodType: .veg, foodName: "بصل", amountUnit: "كوب واحد", numberInArray: 10, carb: "٥"),
+Food(foodType: .veg, foodName: "بصل", amountUnit: "نصف كوب مطبوخ", numberInArray: 11, carb: "٥"),
+Food(foodType: .veg, foodName: "فطر", amountUnit: "كوب واحد", numberInArray: 12, carb: "٥"),
+Food(foodType: .veg, foodName: "فطر", amountUnit: "نصف كوب مطبوخ", numberInArray: 13, carb: "٥"),
+Food(foodType: .veg, foodName: "سبانخ", amountUnit: "كوب واحد", numberInArray: 14, carb: "٥"),
+Food(foodType: .veg, foodName: "سبانخ", amountUnit: "نصف كوب مطبوخ", numberInArray: 15, carb: "٥"),
+Food(foodType: .veg, foodName: "كوسة", amountUnit: "كوب واحد", numberInArray: 16, carb: "٥"),
+Food(foodType: .veg, foodName: "كوسة", amountUnit: "نصف كوب مطبوخ", numberInArray: 17, carb: "٥"),
+Food(foodType: .veg, foodName: "ذرة مسلوقة", amountUnit: "نص كوب", numberInArray: 18, carb: "١٨"),
+Food(foodType: .veg, foodName: "بطاطس", amountUnit: "حبة صغيرة جدا", numberInArray: 19, carb: "٧.٦"),
+Food(foodType: .veg, foodName: "بطاطا حلوة", amountUnit: "حبة صغيرة", numberInArray: 20, carb: "١١.٥"),
+Food(foodType: .veg, foodName: "باذنجان", amountUnit: "حبة كبيرة", numberInArray: 21, carb: "١٩"),
+Food(foodType: .veg, foodName: "قرع", amountUnit: "حبة واحدة", numberInArray: 22, carb: "٢.٥"),
+Food(foodType: .veg, foodName: "خس", amountUnit: "كوب واحد", numberInArray: 23, carb: "٠.٧"),
+Food(foodType: .veg, foodName: "خيار", amountUnit: "حبة كبيرة", numberInArray: 24, carb: "٧.١"),
+Food(foodType: .veg, foodName: "ملفوف", amountUnit: "كوب واحد", numberInArray: 25, carb: "٣.٢"),
+Food(foodType: .veg, foodName: "بقدونس", amountUnit: "كوب واحد", numberInArray: 26, carb: "١.٨"),
+Food(foodType: .veg, foodName: "جرجير", amountUnit: "كوب واحد", numberInArray: 27, carb: "٠.٣"),
     ]
 
     //(4) Fruit
     static var fruitList: [Food] = [
-Food(foodType: .fruit, foodName: "تفاحة", amountUnit: "حبة", numberInArray: 0),
-Food(foodType: .fruit, foodName: "مشمش", amountUnit: "حبة", numberInArray: 1),
-Food(foodType: .fruit, foodName: "توت اسود", amountUnit: "كوب", numberInArray: 2),
-Food(foodType: .fruit, foodName: "توت ازرق", amountUnit: "كوب", numberInArray: 3),
-Food(foodType: .fruit, foodName: "كزر", amountUnit: "حبة", numberInArray: 4),
-Food(foodType: .fruit, foodName: "كيوي", amountUnit: "حبة", numberInArray: 5),
-Food(foodType: .fruit, foodName: "كمثرى", amountUnit: "حبة", numberInArray: 6),
-Food(foodType: .fruit, foodName: "برتقال", amountUnit: "حبة", numberInArray: 7),
-Food(foodType: .fruit, foodName: "خوخ", amountUnit: "حبة", numberInArray: 8),
-Food(foodType: .fruit, foodName: "موز", amountUnit: "حبة", numberInArray: 9),
-Food(foodType: .fruit, foodName: "عنب", amountUnit: "حبة", numberInArray: 10),
-Food(foodType: .fruit, foodName: "مانجو", amountUnit: "حبة", numberInArray: 11),
-Food(foodType: .fruit, foodName: "برقوق", amountUnit: "حبة", numberInArray: 12),
-Food(foodType: .fruit, foodName: "يوسفي", amountUnit: "حبة", numberInArray: 13),
-Food(foodType: .fruit, foodName: "فراولة", amountUnit: "كوب", numberInArray: 14),
+Food(foodType: .fruit, foodName: "تفاحة", amountUnit: "حبة واحدة", numberInArray: 0, carb: "١٥"),
+Food(foodType: .fruit, foodName: "مشمش", amountUnit: "حبة واحدة", numberInArray: 1, carb: "٣.٧٥"),
+Food(foodType: .fruit, foodName: "توت اسود", amountUnit: "كوب", numberInArray: 2, carb: "١٥"),
+Food(foodType: .fruit, foodName: "توت ازرق", amountUnit: "٣/٤ الكوب", numberInArray: 3, carb: "١٥"),
+Food(foodType: .fruit, foodName: "كزر", amountUnit: "١٢ حبة", numberInArray: 4, carb: "١٥"),
+Food(foodType: .fruit, foodName: "كيوي", amountUnit: "حبة واحدة", numberInArray: 5, carb: "١٥"),
+Food(foodType: .fruit, foodName: "كمثرى", amountUnit: "حبة واحدة", numberInArray: 6, carb: "٣٠"),
+Food(foodType: .fruit, foodName: "برتقال", amountUnit: "حبة واحدة", numberInArray: 7, carb: "١٥"),
+Food(foodType: .fruit, foodName: "خوخ", amountUnit: "حبة واحدة", numberInArray: 8, carb: "١٥"),
+Food(foodType: .fruit, foodName: "موز", amountUnit: "حبة واحدة", numberInArray: 9, carb: "١٥"),
+Food(foodType: .fruit, foodName: "عنب", amountUnit: "١٧ حبة", numberInArray: 10, carb: "١٥"),
+Food(foodType: .fruit, foodName: "مانجو", amountUnit: "حبة واحدة", numberInArray: 11, carb: "٣٠"),
+Food(foodType: .fruit, foodName: "برقوق", amountUnit: "حبة واحدة", numberInArray: 12, carb: "٧.٥"),
+Food(foodType: .fruit, foodName: "يوسفي", amountUnit: "حبة واحدة", numberInArray: 13, carb: "٧.٥"),
+Food(foodType: .fruit, foodName: "فراولة", amountUnit: "كوب وربع", numberInArray: 14, carb: "١٥"),
     ]
     
     
     //(5) Carbo
     static var carboList: [Food] = [
     
-Food(foodType: .carbo, foodName: "ارز ابيض", amountUnit: "ملاعق", numberInArray: 0),
-Food(foodType: .carbo, foodName: "ارز بني", amountUnit: "كوب", numberInArray: 1),
-Food(foodType: .carbo, foodName: "يكنوا", amountUnit: "كوب", numberInArray: 2),
-Food(foodType: .carbo, foodName: "خبز ابيض", amountUnit: "رغيف", numberInArray: 3),
-Food(foodType: .carbo, foodName: "خبز بالنخالة", amountUnit: "رغيف", numberInArray: 4),
-Food(foodType: .carbo, foodName: "خبز اسمر", amountUnit: "رغيف", numberInArray: 5),
-Food(foodType: .carbo, foodName: "خبز بالشوفان", amountUnit: "شريحة صغيرة", numberInArray: 6),
-Food(foodType: .carbo, foodName: "خبز البرجر", amountUnit: "الطبقة الاولى", numberInArray: 7),
-Food(foodType: .carbo, foodName: "خبز البرجر", amountUnit: "الطبقة الثانية", numberInArray: 8),
-Food(foodType: .carbo, foodName: "خبز التوست الابيض", amountUnit: "قطعة", numberInArray: 10),
-Food(foodType: .carbo, foodName: "خبز التوست الاسمر", amountUnit: "قطعة", numberInArray: 11),
-Food(foodType: .carbo, foodName: "خبز صامولي", amountUnit: "حبة", numberInArray: 12),
-Food(foodType: .carbo, foodName: "شوفان", amountUnit: "ملعقة", numberInArray: 13),
-Food(foodType: .carbo, foodName: "المعكرونة", amountUnit: "كوب", numberInArray: 14),
-Food(foodType: .carbo, foodName: "الفشار", amountUnit: "كوب", numberInArray: 15),
-Food(foodType: .carbo, foodName: "كورن فليكس", amountUnit: "كوب", numberInArray: 16),
-Food(foodType: .carbo, foodName: "بسكويت", amountUnit: "شريحة", numberInArray: 17),
-Food(foodType: .carbo, foodName: "شابورة", amountUnit: "شريحة", numberInArray: 18),
-Food(foodType: .carbo, foodName: "حمص", amountUnit: "كوب", numberInArray: 18),
+Food(foodType: .carbo, foodName: "ارز ابيض", amountUnit: "٦ ملاعق", numberInArray: 0, carb: "١٥"),
+Food(foodType: .carbo, foodName: "ارز بني", amountUnit: "كوب واحد", numberInArray: 1, carb: "٤٥"),
+Food(foodType: .carbo, foodName: "يكنوا", amountUnit: "كوب واحد", numberInArray: 2, carb: "٢٠"),
+Food(foodType: .carbo, foodName: "خبز ابيض", amountUnit: "رغيف واحد", numberInArray: 3, carb: "٤٢"),
+Food(foodType: .carbo, foodName: "خبز بالنخالة", amountUnit: "رغيف واحد", numberInArray: 4, carb: "٢٧"),
+Food(foodType: .carbo, foodName: "خبز اسمر", amountUnit: "ربع خبز", numberInArray: 5, carb: "١١.٦"),
+Food(foodType: .carbo, foodName: "خبز بالشوفان", amountUnit: "شريحة صغيرة", numberInArray: 6, carb: "١٣.١"),
+Food(foodType: .carbo, foodName: "خبز البرجر", amountUnit: "الطبقة الاولى", numberInArray: 7, carb: "١٥"),
+Food(foodType: .carbo, foodName: "خبز البرجر", amountUnit: "الطبقة الثانية", numberInArray: 8, carb: "١٥"),
+Food(foodType: .carbo, foodName: "خبز التوست الابيض", amountUnit: "قطعة واحدة", numberInArray: 9, carb: "١٢"),
+Food(foodType: .carbo, foodName: "خبز التوست الاسمر", amountUnit: "قطعة واحدة", numberInArray: 10, carb: "١٠"),
+Food(foodType: .carbo, foodName: "خبز صامولي", amountUnit: "نصف صامولي", numberInArray: 11, carb: "١٥"),
+Food(foodType: .carbo, foodName: "شوفان", amountUnit: "ملعقة واحدة", numberInArray: 12, carb: "٦"),
+Food(foodType: .carbo, foodName: "المعكرونة", amountUnit: "نصف كوب", numberInArray: 13, carb: "١٥"),
+Food(foodType: .carbo, foodName: "الفشار", amountUnit: "٣ كوب", numberInArray: 14, carb: "١٥"),
+Food(foodType: .carbo, foodName: "كورن فليكس", amountUnit: "نصف كوب", numberInArray: 15, carb: "١٥"),
+Food(foodType: .carbo, foodName: "بسكويت", amountUnit: "شريحتين", numberInArray: 16, carb: "١٥"),
+Food(foodType: .carbo, foodName: "شابورة", amountUnit: "شريحتين", numberInArray: 17, carb: "١٥"),
+Food(foodType: .carbo, foodName: "حمص", amountUnit: "نصف كوب", numberInArray: 18, carb: "١٦"),
 
 
     
@@ -182,14 +182,45 @@ Food(foodType: .carbo, foodName: "حمص", amountUnit: "كوب", numberInArray: 
         }
         
         static func removeFromBasket(food: Food) {
-            
-            for num in 0...foodBasket.count-1 {
+            if foodBasket.count > 0 {
+            for num in 0...(foodBasket.count-1) {
                 if foodBasket[num].foodName == food.foodName {
                     foodBasket.remove(at: num)
-                }
+                    return //if you found it get off from the method
+                    }
             
-        }
+                }
+            }
     }
+    
+    static func findInBasket(food: Food) -> Int {
+        
+        if foodBasket.count > 0 {
+        for num in 0...(foodBasket.count-1) {
+            if foodBasket[num].foodType == food.foodType &&
+                foodBasket[num].foodName == food.foodName {
+                return num
+                }
+            }
+        }
+        return -1
+        
+    }
+    
+ 
+    static func convertFromArabicNumToEnglish(arabicNum: String) -> Double {
+        //
+        let formatter: NumberFormatter = NumberFormatter()
+        formatter.locale = NSLocale(localeIdentifier: "EN") as Locale?
+        //
+        let englishNum = formatter.number(from: arabicNum)
+        let doubleEnglishNum = Double(englishNum!)
+        
+        return doubleEnglishNum
+    }
+    
+ 
+    
     
     
     
