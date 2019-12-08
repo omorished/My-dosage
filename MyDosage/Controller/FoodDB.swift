@@ -8,6 +8,9 @@ class FoodDB{
     
     static var foodBasket: [Food] = []
     
+    static var insulin: Double? = nil
+    static var carbResult: Double? = nil
+    
     //(1) PROTEIN LIST
     static var proteinList: [Food] =
     [
@@ -51,23 +54,23 @@ Food(foodType: .milkAndDairy, foodName: "لبن خالي الدسم", amountUnit
     //(3) Veg
     static var vegList: [Food] = [
 Food(foodType: .veg, foodName: "جزر", amountUnit: "كوب واحد", numberInArray: 0, carb: "٥"),
-Food(foodType: .veg, foodName: "جزر", amountUnit: "نصف كوب مطبوخ", numberInArray: 1, carb: "٥"),
+Food(foodType: .veg, foodName: "جزر مطبوخ", amountUnit: "نصف كوب مطبوخ", numberInArray: 1, carb: "٥"),
 Food(foodType: .veg, foodName: "بروكلي", amountUnit: "كوب واحد", numberInArray: 2, carb: "٥"),
-Food(foodType: .veg, foodName: "بروكلي", amountUnit: "نصف كوب مطبوخ", numberInArray: 3, carb: "٥"),
+Food(foodType: .veg, foodName: "بروكلي مطبوخ", amountUnit: "نصف كوب مطبوخ", numberInArray: 3, carb: "٥"),
 Food(foodType: .veg, foodName: "شمندر", amountUnit: "كوب واحد", numberInArray: 4, carb: "٥"),
-Food(foodType: .veg, foodName: "شمندر", amountUnit: "نصف كوب مطبوخ", numberInArray: 5, carb: "٥"),
+Food(foodType: .veg, foodName: "شمندر مطبوخ", amountUnit: "نصف كوب مطبوخ", numberInArray: 5, carb: "٥"),
 Food(foodType: .veg, foodName: "فلفل رومي", amountUnit: "كوب واحد", numberInArray: 6, carb: "٥"),
-Food(foodType: .veg, foodName: "فلفل رومي", amountUnit: "نصف كوب مطبوخ", numberInArray: 7, carb: "٥"),
+Food(foodType: .veg, foodName: "فلفل رومي مطبوخ", amountUnit: "نصف كوب مطبوخ", numberInArray: 7, carb: "٥"),
 Food(foodType: .veg, foodName: "طماطم", amountUnit: "كوب واحد", numberInArray: 8, carb: "٥"),
-Food(foodType: .veg, foodName: "طماطم", amountUnit: "نصف كوب مطبوخ", numberInArray: 9, carb: "٥"),
+Food(foodType: .veg, foodName: "طماطم مطبوخ", amountUnit: "نصف كوب مطبوخ", numberInArray: 9, carb: "٥"),
 Food(foodType: .veg, foodName: "بصل", amountUnit: "كوب واحد", numberInArray: 10, carb: "٥"),
-Food(foodType: .veg, foodName: "بصل", amountUnit: "نصف كوب مطبوخ", numberInArray: 11, carb: "٥"),
+Food(foodType: .veg, foodName: "بصل مطبوخ", amountUnit: "نصف كوب مطبوخ", numberInArray: 11, carb: "٥"),
 Food(foodType: .veg, foodName: "فطر", amountUnit: "كوب واحد", numberInArray: 12, carb: "٥"),
-Food(foodType: .veg, foodName: "فطر", amountUnit: "نصف كوب مطبوخ", numberInArray: 13, carb: "٥"),
+Food(foodType: .veg, foodName: "فطر مطبوخ", amountUnit: "نصف كوب مطبوخ", numberInArray: 13, carb: "٥"),
 Food(foodType: .veg, foodName: "سبانخ", amountUnit: "كوب واحد", numberInArray: 14, carb: "٥"),
-Food(foodType: .veg, foodName: "سبانخ", amountUnit: "نصف كوب مطبوخ", numberInArray: 15, carb: "٥"),
+Food(foodType: .veg, foodName: "سبانخ مطبوخة", amountUnit: "نصف كوب مطبوخ", numberInArray: 15, carb: "٥"),
 Food(foodType: .veg, foodName: "كوسة", amountUnit: "كوب واحد", numberInArray: 16, carb: "٥"),
-Food(foodType: .veg, foodName: "كوسة", amountUnit: "نصف كوب مطبوخ", numberInArray: 17, carb: "٥"),
+Food(foodType: .veg, foodName: "كوسة مطبوخة", amountUnit: "نصف كوب مطبوخ", numberInArray: 17, carb: "٥"),
 Food(foodType: .veg, foodName: "ذرة مسلوقة", amountUnit: "نص كوب", numberInArray: 18, carb: "١٨"),
 Food(foodType: .veg, foodName: "بطاطس", amountUnit: "حبة صغيرة جدا", numberInArray: 19, carb: "٧.٦"),
 Food(foodType: .veg, foodName: "بطاطا حلوة", amountUnit: "حبة صغيرة", numberInArray: 20, carb: "١١.٥"),
@@ -105,7 +108,7 @@ Food(foodType: .fruit, foodName: "فراولة", amountUnit: "كوب وربع", 
     
 Food(foodType: .carbo, foodName: "ارز ابيض", amountUnit: "٦ ملاعق", numberInArray: 0, carb: "١٥"),
 Food(foodType: .carbo, foodName: "ارز بني", amountUnit: "كوب واحد", numberInArray: 1, carb: "٤٥"),
-Food(foodType: .carbo, foodName: "يكنوا", amountUnit: "كوب واحد", numberInArray: 2, carb: "٢٠"),
+Food(foodType: .carbo, foodName: "كينوا", amountUnit: "كوب واحد", numberInArray: 2, carb: "٢٠"),
 Food(foodType: .carbo, foodName: "خبز ابيض", amountUnit: "رغيف واحد", numberInArray: 3, carb: "٤٢"),
 Food(foodType: .carbo, foodName: "خبز بالنخالة", amountUnit: "رغيف واحد", numberInArray: 4, carb: "٢٧"),
 Food(foodType: .carbo, foodName: "خبز اسمر", amountUnit: "ربع خبز", numberInArray: 5, carb: "١١.٦"),
@@ -207,6 +210,50 @@ Food(foodType: .carbo, foodName: "حمص", amountUnit: "نصف كوب", numberIn
         
     }
     
+    //
+    static func findInOriginalList(foodName: String) -> [Int] {
+        
+        //First is foodType number the second is number of food in array
+        
+        //check in protein
+        for food in getProperList(passTagNum: 0) {
+            if foodName == food.foodName {
+                return [0,food.numberInArray]
+            }
+        }
+       //check in milk and dairy
+           for food in getProperList(passTagNum: 1) {
+               if foodName == food.foodName {
+                   return [1,food.numberInArray]
+               }
+           }
+        //check in milk and dairy
+        for food in getProperList(passTagNum: 2) {
+            if foodName == food.foodName {
+                return [2,food.numberInArray]
+            }
+        }
+        //check in veg
+        for food in getProperList(passTagNum: 3) {
+            if foodName == food.foodName {
+                return [3,food.numberInArray]
+            }
+        }
+        //check in fruit
+        for food in getProperList(passTagNum: 4) {
+            if foodName == food.foodName {
+                return [4,food.numberInArray]
+            }
+        }
+        //check in carbo
+        for food in getProperList(passTagNum: 5) {
+            if foodName == food.foodName {
+                return [5,food.numberInArray]
+            }
+        }
+        return [-1,-1]
+    }
+    
  
     static func convertFromArabicNumToEnglish(arabicNum: String) -> Double {
         //
@@ -217,6 +264,30 @@ Food(foodType: .carbo, foodName: "حمص", amountUnit: "نصف كوب", numberIn
         let doubleEnglishNum = Double(englishNum!)
         
         return doubleEnglishNum
+    }
+    
+    static func getDataForSearchResults() -> [String] {
+        
+        var result = [String]()
+        
+        for protein in getProteinList() {
+            result.append(protein.foodName)
+        }
+        for milkAndDairy in getMilkAndDairyList() {
+            result.append(milkAndDairy.foodName)
+        }
+        for veg in getVegList() {
+            result.append(veg.foodName)
+        }
+        for fruit in getFruitList() {
+            result.append(fruit.foodName)
+        }
+        for carbo in getCarboList() {
+            result.append(carbo.foodName)
+        }
+                
+        return result
+        
     }
     
  

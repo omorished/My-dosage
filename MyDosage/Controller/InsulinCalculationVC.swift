@@ -13,6 +13,7 @@ import UIKit
 class InsulinCalculationVC: UIViewController {
     
     
+
     
     //UI Connection
     
@@ -22,14 +23,18 @@ class InsulinCalculationVC: UIViewController {
     
     @IBOutlet weak var resultLbl: UILabel!
     
+    @IBOutlet weak var alertLbl: UILabel!
+    
+    
+    
+    
     
     override func viewDidLoad() {
         
-        //insulinTxtField Design
-//        insulinTxtField.layer.borderWidth = 1
-//        insulinTxtField.layer.borderColor = #colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1)
-//        insulinTxtField.layer.cornerRadius = 5
+        // change back button color
+        navigationController!.navigationBar.tintColor = UIColor.white
         
+
         //calculationBtn Design
         calculationBtn.layer.cornerRadius = 5
         calculationBtn.layer.shadowColor = UIColor.gray.cgColor
@@ -58,72 +63,47 @@ class InsulinCalculationVC: UIViewController {
     //calculate insulin result
     @IBAction func calculateInsulin(_ sender: UIButton) {
         
+        //if alerted before
+        alertLbl.text = ""
+        
         dismissKeyboard()
-        if insulinTxtField.text != nil && insulinTxtField.text != ""{
+        
+        if insulinTxtField.text != nil && insulinTxtField.text != "" {
             
-            let insulin = Double(insulinTxtField.text!)!
+            //maybe the user entered arabic number so we want make sure to convert it to english number
+            let insulin = FoodDB.convertFromArabicNumToEnglish(arabicNum:  insulinTxtField.text!)
+            if insulin != 0 {
+            FoodDB.insulin = Double(insulinTxtField.text!)
+
             let calcInsulin = 500/insulin
-            resultLbl.text = String(Double(round(1000*calcInsulin)/1000))
+            //this calculation for detect decimal points
+            let finalResult = Double(round(1000*calcInsulin)/1000)
+            //to check if is integer number to print as integer is good for user UX
+            let checkIfNumberWithNoDecimal1 = Int(finalResult)
+            let checkIfNumberWithNoDecimal2 = Double(checkIfNumberWithNoDecimal1)
+                //to check if the number with no decimal or not
+                if finalResult == checkIfNumberWithNoDecimal2 {
+                     resultLbl.text = String(checkIfNumberWithNoDecimal1)
+                } else {
+                    resultLbl.text = String(finalResult)
+                }
+           
+            } else {
+                // if the user enter 0 then alert this message in alertLbl
+                alertLbl.text = "الرجاء ادخال رقم اكبر من الصفر"
+                FoodDB.insulin = 0
+                
+            }
             
         } else {
-            //do nothing
+            resultLbl.text = ""
+            alertLbl.text = "الرجاء ادخال رقم"
+            FoodDB.insulin = 0
+
         }
         
         
        
     }
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-
-//    //UI View
-//    @IBOutlet weak var insulinTxtFiled: UITextField!
-//
-//    @IBOutlet weak var calculateBtn: UIButton!
-//
-//    @IBOutlet weak var result: UILabel!
-//
-//    override func viewDidLoad() {
-//        super.viewDidLoad()
-//
-//        //Insuline txtfield design
-//        insulinTxtFiled.layer.borderWidth = 1
-//        insulinTxtFiled.layer.borderColor = #colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1)
-//        insulinTxtFiled.layer.cornerRadius = 5
-//
-//        //calculate btn
-//        calculateBtn.layer.cornerRadius = 5
-//
-//        //tap gesture
-//        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
-//
-//        view.addGestureRecognizer(tap)
-//
-//    }
-//
-//
-//
-//    @IBAction func calc(_ sender: UIButton) {
-//        //my code
-//    }
-//
-//    @objc func dismissKeyboard() {
-//
-//        view.endEditing(true)
-//    }
-//
-
 }

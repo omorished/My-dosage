@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C1FF212236B655000A4D73D /* SearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1FF211236B655000A4D73D /* SearchCell.swift */; };
+		4C1FF214236BB0A600A4D73D /* InsulinDoseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1FF213236BB0A600A4D73D /* InsulinDoseVC.swift */; };
 		4C3F87E6235E0D140012EBF4 /* CategoriesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3F87E5235E0D140012EBF4 /* CategoriesVC.swift */; };
 		4C6B6991235E2A35006586D3 /* CategoryUIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6B6990235E2A35006586D3 /* CategoryUIButton.swift */; };
 		4C6B699323620DE4006586D3 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6B699223620DE4006586D3 /* Food.swift */; };
@@ -25,6 +27,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4C1FF211236B655000A4D73D /* SearchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCell.swift; sourceTree = "<group>"; };
+		4C1FF213236BB0A600A4D73D /* InsulinDoseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsulinDoseVC.swift; sourceTree = "<group>"; };
 		4C3F87E5235E0D140012EBF4 /* CategoriesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesVC.swift; sourceTree = "<group>"; };
 		4C6B6990235E2A35006586D3 /* CategoryUIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryUIButton.swift; sourceTree = "<group>"; };
 		4C6B699223620DE4006586D3 /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Food.swift; path = MyDosage/View/Food.swift; sourceTree = SOURCE_ROOT; };
@@ -90,6 +94,8 @@
 				4C6B699423621824006586D3 /* FoodListVC.swift */,
 				4CEAB3FC2364F9AB00B913CB /* BasketVC.swift */,
 				4C6B699623623BD0006586D3 /* FoodCell.swift */,
+				4C1FF213236BB0A600A4D73D /* InsulinDoseVC.swift */,
+				4C1FF211236B655000A4D73D /* SearchCell.swift */,
 				4CEAB3FE23651A3D00B913CB /* BasketCell.swift */,
 				4C3F87E5235E0D140012EBF4 /* CategoriesVC.swift */,
 				855555A62333A27D0097B6C5 /* MainPageVC.swift */,
@@ -207,8 +213,10 @@
 				8565068A2335979E004B15EC /* InsulinCalculationVC.swift in Sources */,
 				4C6B699723623BD0006586D3 /* FoodCell.swift in Sources */,
 				4C3F87E6235E0D140012EBF4 /* CategoriesVC.swift in Sources */,
+				4C1FF214236BB0A600A4D73D /* InsulinDoseVC.swift in Sources */,
 				4CEAB3FD2364F9AB00B913CB /* BasketVC.swift in Sources */,
 				4C6B699923634F9C006586D3 /* FoodDB.swift in Sources */,
+				4C1FF212236B655000A4D73D /* SearchCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

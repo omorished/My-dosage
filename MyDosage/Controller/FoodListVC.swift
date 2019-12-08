@@ -14,15 +14,21 @@ class FoodListVC: UIViewController {
 
 
     //
-    var category: String = ""
+//    var category: String = ""
+    //this one to check which category we choose
     var tagNumber: Int = 0
     
     //
-    
+    //this one to check if the user search for the food
+    var searchClicked: Bool = false
+    var itsNumberInArray: Int = 0
     
     
     
     override func viewWillAppear(_ animated: Bool) {
+        
+        // change back button color
+        navigationController!.navigationBar.tintColor = UIColor.white
         
         //
         foodTableView.reloadData()
@@ -48,6 +54,23 @@ class FoodListVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
    
+        foodTableView.reloadData()
+        
+        // to set top title
+        switch (tagNumber) {
+        case 1:
+            self.title = "بروتين"
+        case 2:
+            self.title = "الحليب ومشتقاته"
+        case 3:
+            self.title = "خضار"
+        case 4:
+            self.title = "فواكه"
+        default:
+            self.title = "كربوهيدرات"
+        }
+        
+
         
         //
         foodTableView.delegate = self
@@ -59,17 +82,21 @@ class FoodListVC: UIViewController {
              
               view.addGestureRecognizer(tap)
         
+        // to check if the the user find the food by searching it
+        if searchClicked {
+            searchBtnClicked()
+        }
    
     }
     
    //when checkbox clicked
     @IBAction func checkboxClicked(_ sender: UIButton) {
-        print("ENTERED METHOD")
         
+        // if it حذف then clear the text
         if sender.titleLabel?.text == "حذف" {
-            print("HI HATHF")
             setTxtFieldEmpty(tag: sender.tag)
         }
+        //call this method to make deletion form the basket a
         checkIftxtfieldEmptyOrNot(myTxtfield:  getAmountTxtfield(tag: sender.tag))
         
         dismissKeyboard()
@@ -81,17 +108,17 @@ class FoodListVC: UIViewController {
     //
     @IBAction func amountTxtfieldEndEditing(_ sender: UITextField) {
        
+        //if the user clear the text and he/she go out from the textfield, then the food is going to be deleted
         checkIftxtfieldEmptyOrNot(myTxtfield: sender)
     }
     
     //
     @IBAction func amountTxtfieldChanged(_ sender: UITextField) {
         
+        //if the textfield change then check if is not empty make the button clickable
         if sender.text == "" || sender.text == nil {
-            print("WILL BE UNCLACKABLE,,,,,,")
             makeAddBtnUnclickable(tag: sender.tag)
         } else {
-            print("WILL BE CLACKABLE:::::::")
             makeAddBtnClickable(tag: sender.tag)
         }
         
@@ -99,7 +126,7 @@ class FoodListVC: UIViewController {
     
     
 
-    
+    //make the textfield empty
     func setTxtFieldEmpty(tag: Int) {
         
     let indexPath = IndexPath(row: tag, section: 0)
@@ -188,6 +215,13 @@ class FoodListVC: UIViewController {
         return cell.checkboxBtn.titleLabel!.text!
     }
     
+    func getBtn(tag: Int) -> UIButton {
+        
+        let indexPath = IndexPath(row: tag, section: 0)
+        let cell = foodTableView.cellForRow(at: indexPath) as! FoodCell
+        return cell.checkboxBtn
+    }
+    
     func getAmountTxtfield(tag: Int) -> UITextField {
         
         let indexPath = IndexPath(row: tag, section: 0)
@@ -195,18 +229,33 @@ class FoodListVC: UIViewController {
         return cell.amountTxtField
     }
     
+    func getAmountunit(tag: Int) -> UILabel {
+           
+           let indexPath = IndexPath(row: tag, section: 0)
+           let cell = foodTableView.cellForRow(at: indexPath) as! FoodCell
+           return cell.amountUnitLbl
+       }
+    
+    func getFoodName(tag: Int) -> UILabel {
+        
+        let indexPath = IndexPath(row: tag, section: 0)
+        let cell = foodTableView.cellForRow(at: indexPath) as! FoodCell
+        return cell.foodNameLbl
+    }
+    
 
     func checkIftxtfieldEmptyOrNot(myTxtfield: UITextField) {
         
-        print("ENTERED END EDITING")
-               print("TEXT: \(myTxtfield.text!)")
-               //Insert new element
-               if myTxtfield.text != "" && myTxtfield.text != nil  {
-                   print("ENTER IF")
+    
+        //EXTRA Condition if user put zero for amount
+        
+                //(1) update new element
+        if myTxtfield.text != "" && myTxtfield.text != nil && FoodDB.convertFromArabicNumToEnglish(arabicNum: myTxtfield.text!) != 0 {
+                //to check if it is already exist in the basket
                    let ifExist = FoodDB.findInBasket(food: FoodDB.getProperList(passTagNum: tagNumber)[myTxtfield.tag])
                    
                    FoodDB.getProperList(passTagNum: tagNumber)[myTxtfield.tag].amount = myTxtfield.text!
-                   //if is exit in foodBasketArray
+                   //if is exist in basket array update the amount
                    if ifExist > -1 {
                    FoodDB.foodBasket[FoodDB.findInBasket(food: FoodDB.getProperList(passTagNum: tagNumber)[myTxtfield.tag])].amount = myTxtfield.text!
                     //
@@ -214,18 +263,31 @@ class FoodListVC: UIViewController {
                     
                     return
                    }
-                   
+                   //(2) insert element
                    prepareForChangeAddBtnToDeleteBtn(tag: myTxtfield.tag)
                    
                //delete element
                } else {
-                   print("ENTERE THE ELSE IF")
                    
                    FoodDB.getProperList(passTagNum: tagNumber)[myTxtfield.tag].amount = ""
                    prepareForChangeDeleteBtnToAddBtn(tag: myTxtfield.tag)
                }
         
     }
+    // the method that we called in ViewDidLoad
+    func searchBtnClicked() {
+    // to direct the user to the specific food that he/she search for
+    DispatchQueue.main.async {
+        let indexPath = IndexPath(row: self.itsNumberInArray, section: 0)
+        self.foodTableView.scrollToRow(at: indexPath, at: .none, animated: true)
+        
+        
+        self.foodTableView.selectRow(at: indexPath, animated: true, scrollPosition: UITableView.ScrollPosition.middle)
+
+                }
+        searchClicked = false
+
+               }
     
     //to dismiss the keyboard whenever click everywhere in the blank view
        @objc func dismissKeyboard() {
@@ -251,6 +313,8 @@ extension FoodListVC: UITableViewDelegate, UITableViewDataSource{
         let food = FoodDB.getProperList(passTagNum: tagNumber)[indexPath.row]
         let cell = tableView.dequeueReusableCell(withIdentifier: "foodCell") as! FoodCell
         
+        
+
         //configurtion
         cell.setFood(food: food)
         cell.checkboxBtn.tag = indexPath.row
@@ -261,6 +325,7 @@ extension FoodListVC: UITableViewDelegate, UITableViewDataSource{
         if FoodDB.getProperList(passTagNum: tagNumber)[indexPath.row].checked {
             cell.checkboxBtn.setTitle("حذف", for: .normal)
             cell.checkboxBtn.setTitleColor(.red, for: .normal)
+            cell.checkboxBtn.isEnabled = true
             
         } else {
             
@@ -278,8 +343,12 @@ extension FoodListVC: UITableViewDelegate, UITableViewDataSource{
         }
         
         //to make it unselectable
-        cell.selectionStyle = .none
         
+        //to make delay for selction
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+            cell.selectionStyle = .none
+            
+        }
         
         
         return cell
@@ -298,9 +367,10 @@ extension FoodListVC: UITableViewDelegate, UITableViewDataSource{
     
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        view.endEditing(true)
+        dismissKeyboard()
     }
     
 }
+
 
 
